@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Salud En Casa {{nombre}}</title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+	<header>
+		<h1>Mi sitio web</h1>
+		<p> Sitio web creada por python</p>
+	</header>
+	<h2>Medicamentos</h2>
+	{% if nombre%}
+	<h1>El medicamento que compró es {{nombre|title}}</h1>
+	<p>Precio de: 2000</p>
+	{%else%}
+	<p>No has indicado un medicamento</p>
+	{%endif%}
+</body>
+</html>
